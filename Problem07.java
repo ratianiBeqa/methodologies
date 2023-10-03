@@ -18,13 +18,11 @@ public class Problem07 extends SuperKarel {
 	}
 	
 	public void resetPosition() {
-		turnLeft();
-		turnLeft();
+		turnAround();
 		while(frontIsClear()) {
 			move();
 		}
-		turnLeft();
-		turnLeft();
+		turnAround();
 	}
 	
 	public void goUp() {
