@@ -29,16 +29,10 @@ public class Seminar03 extends Karel {
 		turnLeft();
 		move();
 		putBeeper();
-		turnLeft();
+		turnRight();
 		move();
 		turnLeft();
 		move();
-		turnAround();
-		putBeeper();
-		move();
-		putBeeper();
-		move();
-		putBeeper();
 	}
 	
 	public void buildChimneyBlockRight(){
@@ -47,7 +41,12 @@ public class Seminar03 extends Karel {
 		turnRight();
 		move();
 		putBeeper();
-		
+		turnAround();
+		putBeeper();
+		move();
+		putBeeper();
+		move();
+		putBeeper();
 	}
 	
 	public void turnRight(){
