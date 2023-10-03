@@ -1,8 +1,10 @@
 import stanford.karel.SuperKarel;
 
 public class Problem07 extends SuperKarel {
+	private boolean filled;
+
 	public void run() {
-		bool filled = false;
+		filled = false;
 		while(!filled){
 			fillRow();
 			resetPosition();
