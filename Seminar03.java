@@ -4,6 +4,7 @@ public class Seminar03 extends SuperKarel {
 	public void run(){
 		move();
 		move();
+		buildHouse();
 	}
 	
 	public void buildHouse(){
