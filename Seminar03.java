@@ -8,11 +8,11 @@ public class Seminar03 extends SuperKarel {
 	}
 	
 	public void buildHouse(){
-		putBeeper();
 		turnLeft();
+		putBeeper();
 		for(int i=0; i<9; i++) {
-			putBeeper();
 			move();
+			putBeeper();
 		}
 	}
 }
