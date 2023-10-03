@@ -22,9 +22,9 @@ public class Seminar03 extends Karel {
 	}
 	
 	public void buildChimney(){
-		buildChimneyBlockLeft();
-		buildChimneyBlockLeft();
-		buildChimneyBlockLeft();
+		putRightDiagonally();
+		putRightDiagonally();
+		putRightDiagonally();
 	}
 	
 	public void buildChimneyBlockLeft(){
