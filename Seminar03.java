@@ -130,7 +130,7 @@ public class Seminar03 extends Karel {
 	}
 	
 	public void buildTop(){
-		turnAround();
+		turnRight();
 		move();
 		move();
 		move();
