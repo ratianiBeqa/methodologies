@@ -9,7 +9,7 @@ public class Seminar03 extends Karel {
 	
 	public void buildHouse(){
 		buildLeftWall();
-		buildChimney();
+		buildRoof();
 	}
 	
 	public void buildLeftWall(){
@@ -21,16 +21,40 @@ public class Seminar03 extends Karel {
 		}
 	}
 	
-	public void buildChimney(){
-		putRightDiagonally();
-		putRightDiagonally();
-		putRightDiagonally();
+	public void buildRoof(){
+		buildLeftRoof();
+		buildRightRoof();
 	}
 	
-	public void putRightDiagonally(){
+	public void buildLeftRoof(){
+		buildLeftRoofBlock();
+		buildLeftRoofBlock();
+		buildLeftRoofBlock();
+	}
+	
+	
+	public void buildLeftRoofBlock(){
 		turnRight();
 		move();
 		turnLeft();
+		move();
+		putBeeper();
+	}
+	
+	public void buildRightRoof(){
+		turnRight();
+		move();
+		turnRight();
+		move();
+		putBeeper();
+		turnLeft();
+		move();
+		turnLeft();
+		move();
+		turnAround();
+		putBeeper();
+		move();
+		putBeeper();
 		move();
 		putBeeper();
 	}
