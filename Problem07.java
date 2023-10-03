@@ -2,7 +2,8 @@ import stanford.karel.SuperKarel;
 
 public class Problem07 extends SuperKarel {
 	public void run() {
-		while(leftIsClear()){
+		bool filled = false;
+		while(!filled){
 			fillRow();
 			resetPosition();
 			goUp();
@@ -29,8 +30,12 @@ public class Problem07 extends SuperKarel {
 	}
 	
 	public void goUp() {
-		turnLeft();
-		move();
-		turnRight();
+		if (leftIsClear()) {
+			turnLeft();
+			move();
+			turnRight();	
+		} else {
+			filled = true;
+		}
 	}
 }
