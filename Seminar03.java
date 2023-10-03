@@ -13,6 +13,7 @@ public class Seminar03 extends Karel {
 		buildRighWall();
 		buildDoor();
 		buildWindow();
+		buildTop();
 	}
 	
 	public void buildLeftWall(){
@@ -126,6 +127,22 @@ public class Seminar03 extends Karel {
 		turnRight();
 		move();
 		putBeeper();
+	}
+	
+	public void buildTop(){
+		turnAround();
+		move();
+		move();
+		move();
+		turnLeft();
+		move();
+		move();
+		turnAround();
+		putBeeper();
+		for(int i=0; i<4; i++){
+			move();
+			putBeeper();
+		}
 	}
 	
 	public void turnRight(){
