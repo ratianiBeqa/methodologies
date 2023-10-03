@@ -15,6 +15,7 @@ public class Seminar03 extends Karel {
 			buildDoor();
 			buildWindow();
 			buildTop();
+			resetPosition();
 		}
 	}
 	
