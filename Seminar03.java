@@ -13,6 +13,8 @@ public class Seminar03 extends SuperKarel {
 		for(int i=0; i<9; i++) {
 			move();
 			putBeeper();
+			move();
+			move();
 		}
 	}
 }
