@@ -97,6 +97,16 @@ public class Seminar03 extends Karel {
 			move();
 			putBeeper();
 		}
+		turnLeft();
+		move();
+		putBeeper();
+		move();
+		turnLeft();
+		putBeeper();
+		for (int i=0; i<3; i++){
+			move();
+			putBeeper();
+		}
 	}
 	
 	public void turnRight(){
