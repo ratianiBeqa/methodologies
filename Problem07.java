@@ -1,7 +1,8 @@
 import stanford.karel.SuperKarel;
 
 public class Problem07 extends SuperKarel {
-	private boolean filled;
+
+	boolean filled = false;
 
 	public void run() {
 		filled = false;
