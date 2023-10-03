@@ -5,12 +5,12 @@ public class Problem07 extends SuperKarel {
 	boolean filled = false;
 
 	public void run() {
-		filled = false;
-		while(!filled){
+		while(leftIsClear()){
 			fillRow();
 			resetPosition();
 			goUp();
 		}
+		fillRow();
 	}
 	public void fillRow() {
 		if(noBeepersPresent()) {
@@ -33,12 +33,8 @@ public class Problem07 extends SuperKarel {
 	}
 	
 	public void goUp() {
-		if (leftIsClear()) {
-			turnLeft();
-			move();
-			turnRight();	
-		} else {
-			filled = true;
-		}
+		turnLeft();
+		move();
+		turnRight();	
 	}
 }
