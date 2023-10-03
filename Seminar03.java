@@ -1,6 +1,6 @@
-import stanford.karel.SuperKarel;
+import stanford.karel.Karel;
 
-public class Seminar03 extends SuperKarel {
+public class Seminar03 extends Karel {
 	public void run(){
 		move();
 		move();
@@ -14,5 +14,50 @@ public class Seminar03 extends SuperKarel {
 			move();
 			putBeeper();
 		}
+		buildChimney();
+	}
+	
+	public void buildChimney(){
+		buildChimneyBlockLeft();
+		buildChimneyBlockLeft();
+		buildChimneyBlockLeft();
+	}
+	
+	public void buildChimneyBlockLeft(){
+		turnRight();
+		move();
+		turnLeft();
+		move();
+		putBeeper();
+		turnLeft();
+		move();
+		turnLeft();
+		move();
+		turnAround();
+		putBeeper();
+		move();
+		putBeeper();
+		move();
+		putBeeper();
+	}
+	
+	public void buildChimneyBlockRight(){
+		turnRight();
+		move();
+		turnRight();
+		move();
+		putBeeper();
+		
+	}
+	
+	public void turnRight(){
+		turnLeft();
+		turnLeft();
+		turnLeft();
+	}
+	
+	public void turnAround(){
+		turnLeft();
+		turnLeft();
 	}
 }
