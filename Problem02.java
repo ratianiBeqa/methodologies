@@ -2,7 +2,7 @@ import stanford.karel.SuperKarel;
 
 public class Problem02 extends SuperKarel {
 	public void run() {
-		for (int i = 0; i < 4; i++) {
+		for (int i=0; i<4; i++) {
 			move();
 		}
 
