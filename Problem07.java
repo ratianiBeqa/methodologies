@@ -9,11 +9,14 @@ public class Problem07 extends SuperKarel {
 		}
 	}
 	public void fillRow() {
+		if(noBeepersPresent()) {
+			putBeeper();
+		}
 		while(frontIsClear()) {
+			move();
 			if(noBeepersPresent()) {
 				putBeeper();
 			}
-			move();
 		}
 	}
 	
