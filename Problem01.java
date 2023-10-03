@@ -6,5 +6,6 @@ public class Problem01 extends SuperKarel {
 		move();
 		pickBeeper();
 		move();
+		putBeeper();
 	}
 }
