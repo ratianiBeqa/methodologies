@@ -30,8 +30,6 @@ public class Problem07 extends SuperKarel {
 	public void goUp() {
 		turnLeft();
 		move();
-		turnLeft();
-		turnLeft();
-		turnLeft();
+		turnRight();
 	}
 }
