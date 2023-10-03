@@ -10,11 +10,15 @@ public class Seminar03 extends Karel {
 	public void buildHouse(){
 		turnLeft();
 		putBeeper();
+		buildLeftWall();
+		buildChimney();
+	}
+	
+	public void buildLeftWall(){
 		for(int i=0; i<8; i++) {
 			move();
 			putBeeper();
 		}
-		buildChimney();
 	}
 	
 	public void buildChimney(){
@@ -24,18 +28,20 @@ public class Seminar03 extends Karel {
 	}
 	
 	public void buildChimneyBlockLeft(){
+		putRightDiagonally();
+		putRightDiagonally();
+		putRightDiagonally();
+	}
+	
+	public void putRightDiagonally(){
 		turnRight();
 		move();
 		turnLeft();
 		move();
 		putBeeper();
-		turnRight();
-		move();
-		turnLeft();
-		move();
 	}
 	
-	public void buildChimneyBlockRight(){
+	public void buildChimneyRight(){
 		turnRight();
 		move();
 		turnRight();
