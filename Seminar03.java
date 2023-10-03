@@ -157,6 +157,7 @@ public class Seminar03 extends Karel {
 		for(int i=0; i<8; i++){
 			move();
 		}
+		turnLeft();
 	}
 	
 	public void turnRight(){
