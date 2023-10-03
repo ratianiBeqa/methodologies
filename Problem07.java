@@ -10,10 +10,10 @@ public class Problem07 extends SuperKarel {
 	}
 	public void fillRow() {
 		while(frontIsClear()) {
-			while(noBeepersPresent()) {
-				pickBeeper();
+			if(noBeepersPresent()) {
+				putBeeper();
 			}
-			putBeeper();
+			move();
 		}
 	}
 	
