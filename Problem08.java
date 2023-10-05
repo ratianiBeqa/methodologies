@@ -6,6 +6,7 @@ public class Problem08 extends Karel {
 		move();
 		move();
 		takeAway();
+		moveBeepersToDest();
 	}
 	
 	private void takeAway() {
