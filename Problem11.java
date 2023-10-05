@@ -5,7 +5,7 @@ public class Problem11 extends Karel {
 	public void run() {
 		while(rightIsBlocked()) {
 			move();
-			if(frontIsBlocked()) {
+			while(frontIsBlocked()) {
 				turnLeft();
 			}
 			if(beepersPresent()) {
