@@ -16,9 +16,6 @@ public class Problem09 extends Karel {
 			doubleBeepers();
 		}
 		returnBeeepers();
-		turnAround();
-		move();
-		turnAround();
 	}
 	
 	private void returnBeeepers() {
