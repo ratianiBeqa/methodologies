@@ -3,7 +3,15 @@ import stanford.karel.Karel;
 public class Problem11 extends Karel {
 
 	public void run() {
-		move();
+		while(rightIsBlocked()) {
+			move();
+			if(frontIsBlocked()) {
+				turnLeft();
+			}
+			if(beepersPresent()) {
+				pickBeeper();
+			}
+		}
 	}
 	
 }
