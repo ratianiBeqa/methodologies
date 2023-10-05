@@ -3,21 +3,19 @@ import stanford.karel.Karel;
 public class Problem11 extends Karel {
 
 	public void run() {
-		while(rightIsBlocked()) {
+		while(noBeepersPresent()) {
 			move();
-			while(frontIsBlocked()) {
-				turnLeft();
-			}
-			if(beepersPresent()) {
-				pickBeeper();
-			}
-			while(rightIsClear()) {
-				turnLeft();
-				turnLeft();
-				turnLeft();
-				move();
+			if(rightIsBlocked()) {
+				turnRight();
 			}
 		}
+		pickBeeper();
+	}
+	
+	private void turnRight() {
+		turnLeft();
+		turnLeft();
+		turnLeft();
 	}
 	
 }
