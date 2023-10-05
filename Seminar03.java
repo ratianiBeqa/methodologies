@@ -4,11 +4,12 @@ public class Seminar03 extends Karel {
 	public void run(){
 		move();
 		move();
-		buildHouse();
+		buildHouses();
+		buildSun();
 	}
 	
-	public void buildHouse(){
-		for (int i=0; i<5; i++){			
+	public void buildHouses() {
+		for (int i=0; i<5; i++) {	
 			buildLeftWall();
 			buildRoof();
 			buildRighWall();
@@ -19,7 +20,55 @@ public class Seminar03 extends Karel {
 		}
 	}
 	
-	public void buildLeftWall(){
+	public void buildSun() {
+		sunStart();
+		drawLine();
+		sunSecond();
+		drawLine();
+		sunThird();
+		drawDiagonal();
+		sunFourth();
+		drawDiagonal();
+	}
+	
+	private void sunStart() {
+		turnLeft();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+	}
+	
+	private void sunSecond() {
+		turnLeft();
+		move();
+		move();
+		move();
+		move();
+		turnLeft();
+		move();
+		move();
+		turnLeft();
+	}
+	
+	private void drawLine() {
+		putBeeper();
+		while (frontIsClear()) {
+			move();
+			putBeeper();
+		}
+	}
+	
+	private void buildLeftWall() {
 		turnLeft();
 		putBeeper();
 		for(int i=0; i<8; i++) {
@@ -28,19 +77,19 @@ public class Seminar03 extends Karel {
 		}
 	}
 	
-	public void buildRoof(){
+	public void buildRoof() {
 		buildLeftRoof();
 		buildRightRoof();
 	}
 	
-	public void buildLeftRoof(){
+	public void buildLeftRoof() {
 		buildLeftRoofBlock();
 		buildLeftRoofBlock();
 		buildLeftRoofBlock();
 	}
 	
 	
-	public void buildLeftRoofBlock(){
+	public void buildLeftRoofBlock() {
 		turnRight();
 		move();
 		turnLeft();
@@ -48,7 +97,7 @@ public class Seminar03 extends Karel {
 		putBeeper();
 	}
 	
-	public void buildRightRoof(){
+	public void buildRightRoof() {
 		turnRight();
 		move();
 		turnRight();
@@ -70,7 +119,7 @@ public class Seminar03 extends Karel {
 		move();
 	}
 	
-	public void buildChimneyRight(){
+	public void buildChimneyRight() {
 		turnRight();
 		move();
 		turnRight();
@@ -84,7 +133,7 @@ public class Seminar03 extends Karel {
 		putBeeper();
 	}
 	
-	public void buildRighWall(){
+	public void buildRighWall() {
 		putBeeper();
 		for (int i=0; i<8; i++) {
 			move();
@@ -92,13 +141,13 @@ public class Seminar03 extends Karel {
 		}
 	}
 	
-	public void buildDoor(){
+	public void buildDoor() {
 		turnRight();
 		move();
 		move();
 		turnRight();
 		putBeeper();
-		for (int i=0; i<3; i++){
+		for (int i=0; i<3; i++) {
 			move();
 			putBeeper();
 		}
@@ -108,15 +157,15 @@ public class Seminar03 extends Karel {
 		move();
 		turnLeft();
 		putBeeper();
-		for (int i=0; i<3; i++){
+		for (int i=0; i<3; i++) {
 			move();
 			putBeeper();
 		}
 	}
 	
-	public void buildWindow(){
+	public void buildWindow() {
 		turnAround();
-		for(int i=0; i<6; i++){
+		for(int i=0; i<6; i++) {
 			move();
 		}
 		turnRight();
@@ -132,7 +181,7 @@ public class Seminar03 extends Karel {
 		putBeeper();
 	}
 	
-	public void buildTop(){
+	public void buildTop() {
 		turnRight();
 		move();
 		move();
@@ -142,31 +191,31 @@ public class Seminar03 extends Karel {
 		move();
 		turnAround();
 		putBeeper();
-		for(int i=0; i<4; i++){
+		for(int i=0; i<4; i++) {
 			move();
 			putBeeper();
 		}
 	}
 	
-	public void resetPosition(){
+	public void resetPosition() {
 		move();
 		move();
 		move();
 		move();
 		turnRight();
-		for(int i=0; i<8; i++){
+		for(int i=0; i<8; i++) {
 			move();
 		}
 		turnLeft();
 	}
 	
-	public void turnRight(){
+	public void turnRight() {
 		turnLeft();
 		turnLeft();
 		turnLeft();
 	}
 	
-	public void turnAround(){
+	public void turnAround() {
 		turnLeft();
 		turnLeft();
 	}
