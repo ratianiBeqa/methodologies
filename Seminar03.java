@@ -25,10 +25,10 @@ public class Seminar03 extends Karel {
 		drawLine();
 		sunSecond();
 		drawLine();
-		sunThird();
-		drawDiagonal();
-		sunFourth();
-		drawDiagonal();
+//		sunThird();
+//		drawDiagonal();
+//		sunFourth();
+//		drawDiagonal();
 	}
 	
 	private void sunStart() {
