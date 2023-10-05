@@ -6,6 +6,7 @@ public class Seminar03 extends Karel {
 		move();
 		buildHouses();
 		buildSun();
+		goHome();
 	}
 	
 	public void buildHouses() {
@@ -29,6 +30,17 @@ public class Seminar03 extends Karel {
 		drawDiagonal();
 		sunFourth();
 		drawSecondDiagonal();
+	}
+	
+	private void goHome() {
+		while(frontIsClear()) {
+			move();
+		}
+		turnRight();
+		while(frontIsClear()) {
+			move();
+		}
+		turnAround();
 	}
 	
 	private void sunStart() {
