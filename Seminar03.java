@@ -28,7 +28,7 @@ public class Seminar03 extends Karel {
 		sunThird();
 		drawDiagonal();
 		sunFourth();
-		drawDiagonal();
+		drawSecondDiagonal();
 	}
 	
 	private void sunStart() {
@@ -72,13 +72,37 @@ public class Seminar03 extends Karel {
 	
 	private void drawDiagonal() {
 		putBeeper();
-		for(int i=0; i<4; i++) {
+		for(int i=0; i<4; i++) {				
 			turnRight();
 			move();
 			turnLeft();
 			move();
-			putBeeper();
+			if(noBeepersPresent()) {
+				putBeeper();
+			}
 		}
+	}
+	
+	private void drawSecondDiagonal() {
+		putBeeper();
+		for(int i=0; i<4; i++) {				
+			turnLeft();
+			move();
+			turnRight();
+			move();
+			if(noBeepersPresent()) {
+				putBeeper();
+			}
+		}
+	}
+	
+	private void sunFourth() {
+		turnLeft();
+		move();
+		move();
+		move();
+		move();
+		turnLeft();
 	}
 	
 	private void sunThird() {
