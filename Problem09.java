@@ -34,6 +34,15 @@ public class Problem09 extends Karel {
 			move();
 			move();
 		}
+		returnToPosition();
+	}
+	
+	private void returnToPosition() {
+		turnAround();
+		move();
+		move();
+		move();
+		turnAround();
 	}
 	
 	private void doubleBeepers() {
