@@ -8,7 +8,6 @@ public class Problem11 extends Karel {
 			if(rightIsClear()) {
 				turnRight();
 				move();
-				turnRight();
 			}
 			while(frontIsBlocked()) {
 				turnLeft();
