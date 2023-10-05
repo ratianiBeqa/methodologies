@@ -22,6 +22,10 @@ public class Problem08 extends Karel {
 		}
 	}
 	
+	private void moveBeepersToDest() {
+		
+	}
+	
 	private void turnAround() {
 		turnLeft();
 		turnLeft();
