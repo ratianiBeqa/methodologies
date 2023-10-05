@@ -11,6 +11,7 @@ public class Problem08 extends Karel {
 	private void takeAway() {
 		while(beepersPresent()) {
 			turnAround();
+			pickBeeper();
 			move();
 			pickBeeper();
 			move();
