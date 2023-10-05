@@ -2,8 +2,6 @@ import stanford.karel.SuperKarel;
 
 public class Problem07 extends SuperKarel {
 
-	boolean filled = false;
-
 	public void run() {
 		while(leftIsClear()){
 			fillRow();
