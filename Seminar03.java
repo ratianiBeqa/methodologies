@@ -66,7 +66,9 @@ public class Seminar03 extends Karel {
 		putBeeper();
 		while (frontIsClear()) {
 			move();
-			putBeeper();
+			if(noBeepersPresent()) {				
+				putBeeper();
+			}
 		}
 	}
 	
@@ -96,15 +98,6 @@ public class Seminar03 extends Karel {
 		}
 	}
 	
-	private void sunFourth() {
-		turnLeft();
-		move();
-		move();
-		move();
-		move();
-		turnLeft();
-	}
-	
 	private void sunThird() {
 		turnAround();
 		move();
@@ -112,11 +105,19 @@ public class Seminar03 extends Karel {
 		move();
 		move();
 		move();
-		move();
 		turnLeft();
 		move();
 		move();
 		turnAround();
+	}
+	
+	private void sunFourth() {
+		turnLeft();
+		move();
+		move();
+		move();
+		move();
+		turnLeft();
 	}
 	
 	private void buildLeftWall() {
