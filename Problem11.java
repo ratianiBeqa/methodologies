@@ -8,6 +8,9 @@ public class Problem11 extends Karel {
 			while(rightIsClear()) {
 				turnRight();
 			}
+			while(frontIsBlocked()) {
+				turnLeft();
+			}
 		}
 		pickBeeper();
 	}
