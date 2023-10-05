@@ -23,7 +23,17 @@ public class Problem08 extends Karel {
 	}
 	
 	private void moveBeepersToDest() {
-		
+		turnAround();
+		move();
+		while(beepersPresent()) {
+			turnAround();
+			move();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			move();
+		}
 	}
 	
 	private void turnAround() {
