@@ -27,6 +27,7 @@ public class Problem10 extends Karel {
 			move();
 			putBeeper();
 			returnDivider();
+			resetInitialPosition();
 		}
 	}
 	
@@ -45,6 +46,14 @@ public class Problem10 extends Karel {
 	}
 	
 	private void resetPosition() {
+		turnAround();
+		move();
+		move();
+		move();
+		turnAround();
+	}
+	
+	private void resetInitialPosition() {
 		turnAround();
 		move();
 		move();
