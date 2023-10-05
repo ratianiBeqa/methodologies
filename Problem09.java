@@ -4,37 +4,21 @@ public class Problem09 extends Karel {
 
 	public void run() {
 		move();
-		move();
-		takeAway();
-		moveBeepersToDest();
+		multiplyBeepers();
 	}
 	
-	private void takeAway() {
-		while(beepersPresent()) {
-			turnAround();
-			pickBeeper();
-			move();
-			pickBeeper();
-			move();
-			putBeeper();
-			turnAround();
-			move();
-			move();
-		}
-	}
-	
-	private void moveBeepersToDest() {
-		turnAround();
-		move();
+	private void multiplyBeepers() {
 		while(beepersPresent()) {
 			pickBeeper();
-			turnAround();
 			move();
-			move();
-			putBeeper();
-			turnAround();
-			move();
-			move();
+			while(beepersPresent()) {
+				pickBeeper();
+				move();
+				putBeeper();
+				turnAround();
+				move();
+				turnAround();
+			}
 		}
 	}
 	
