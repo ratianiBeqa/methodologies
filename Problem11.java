@@ -11,7 +11,7 @@ public class Problem11 extends Karel {
 			if(beepersPresent()) {
 				pickBeeper();
 			}
-			if(rightIsClear()) {
+			while(rightIsClear()) {
 				turnLeft();
 				turnLeft();
 				turnLeft();
