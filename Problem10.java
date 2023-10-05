@@ -4,18 +4,6 @@ public class Problem10 extends Karel {
 
 	public void run() {
 		move();
-		divide();
-	}
-	
-	private void divide() {
-		while(beepersPresent()) {
-			move();
-			while(beepersPresent()) {
-				pickBeeper();
-				move();
-				pickBeeper();
-			}
-		}
 	}
 	
 }
