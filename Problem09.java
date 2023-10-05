@@ -13,17 +13,37 @@ public class Problem09 extends Karel {
 		pickBeeper();
 		move();
 		while(beepersPresent()) {
+			doubleBeepers();
+		}
+		returnBeeepers();
+		turnAround();
+		move();
+		turnAround();
+	}
+	
+	private void returnBeeepers() {
+		move();
+		move();
+		while(beepersPresent()) {
+			turnAround();
 			pickBeeper();
 			move();
-			putBeeper();
 			move();
 			putBeeper();
 			turnAround();
 			move();
 			move();
-			turnAround();
 		}
+	}
+	
+	private void doubleBeepers() {
+		pickBeeper();
+		move();
+		putBeeper();
+		move();
+		putBeeper();
 		turnAround();
+		move();
 		move();
 		turnAround();
 	}
