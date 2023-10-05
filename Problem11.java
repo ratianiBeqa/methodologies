@@ -5,10 +5,12 @@ public class Problem11 extends Karel {
 	public void run() {
 		while(noBeepersPresent()) {
 			move();
-			while(rightIsClear()) {
+			if(rightIsClear()) {
+				turnRight();
+				move();
 				turnRight();
 			}
-			while(frontIsBlocked()) {
+			if(frontIsBlocked()) {
 				turnLeft();
 			}
 		}
