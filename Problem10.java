@@ -23,7 +23,24 @@ public class Problem10 extends Karel {
 				move();
 				putBeeper();
 				resetPosition();
-			}	
+			}
+			move();
+			putBeeper();
+			returnDivider();
+		}
+	}
+	
+	private void returnDivider() {
+		move();
+		while(beepersPresent()) {
+			turnAround();
+			pickBeeper();
+			move();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			move();
 		}
 	}
 	
