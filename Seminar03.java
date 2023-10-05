@@ -18,9 +18,6 @@ public class Seminar03 extends Karel {
 			buildTop();
 			resetPosition();
 		}
-		turnAround();
-		move();
-		turnRight();
 	}
 	
 	public void buildSun() {
@@ -35,7 +32,9 @@ public class Seminar03 extends Karel {
 	}
 	
 	private void sunStart() {
-		turnLeft();
+		turnAround();
+		move();
+		turnRight();
 		move();
 		move();
 		move();
