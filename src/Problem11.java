@@ -18,7 +18,7 @@ public class Problem11 extends Karel {
 	private void turnRight() {
 		turnLeft();
 		turnLeft();
-		turnLeft();
+		turnLeft(); //test comment
 	}
 	
 }
