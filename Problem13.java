@@ -1,6 +1,5 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
-import java.awt.Color;
 
 public class Problem13 extends GraphicsProgram {
 	public void run() {
