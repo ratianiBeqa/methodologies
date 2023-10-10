@@ -13,6 +13,8 @@ public class Problem12 extends GraphicsProgram {
 		
 		GRect door = new GRect(50, 100);
 		add(door, 150+75, height-80);
+		door.setFilled(true);
+		door.setColor(Color.orange);
 		
 		GLine roofLine = new GLine(150, height-200, 150+100, height-300);
 		add(roofLine);
