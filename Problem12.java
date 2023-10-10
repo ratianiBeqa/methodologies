@@ -23,7 +23,7 @@ public class Problem12 extends GraphicsProgram {
 		GRect windowSecond = new GRect(50, 50);
 		add(windowSecond, 275, height - 175);
 		
-		GOval doorKnob = new GOval(5, 5, 5, height-30);
+		GOval doorKnob = new GOval(250, height-30, 5, 5);
 		add(doorKnob);
 		
 	}
