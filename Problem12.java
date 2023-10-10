@@ -32,6 +32,7 @@ public class Problem12 extends GraphicsProgram {
 		
 		GOval doorKnob = new GOval(240, height-30, 5, 5);
 		add(doorKnob);
+		doorKnob.setFilled(true);
 		
 	}
 }
