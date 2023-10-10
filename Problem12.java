@@ -9,7 +9,7 @@ public class Problem12 extends GraphicsProgram {
 		GRect myRect = new GRect(200, 200);
 		add(myRect, 150, height-200);
 		myRect.setFilled(true);
-		myRect.setFillColor(Color.ORANGE);
+		myRect.setFillColor(Color.orange);
 		
 		GRect door = new GRect(50, 100);
 		add(door, 150+75, height-80);
