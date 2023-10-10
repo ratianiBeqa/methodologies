@@ -3,11 +3,10 @@ import acm.program.GraphicsProgram;
 
 public class Problem12 extends GraphicsProgram {
 	public void run() {
-		int width = getWidth();
 		int height = getHeight();
 		
 		GRect myRect = new GRect(200, 200);
-		add(myRect, width/2-200, height - 200);
+		add(myRect, 150, height - 200);
 		
 		GRect door = new GRect(50, 100);
 		add(door, 150+75, 200+100);
