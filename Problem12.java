@@ -10,8 +10,9 @@ public class Problem12 extends GraphicsProgram {
 		add(door, 150+75, 200+100);
 		
 		GLine roofLine = new GLine(150, 200, 150+75, 60);
-		
-		GLine roofLine = new GLine(150+75, 60, 200+150, 200);
 		add(roofLine);
+		
+		GLine roofLine2 = new GLine(150+75, 60, 200+150, 200);
+		add(roofLine2);
 	}
 }
