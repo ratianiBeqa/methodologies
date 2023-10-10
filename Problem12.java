@@ -9,7 +9,7 @@ public class Problem12 extends GraphicsProgram {
 		add(myRect, 150, height-200);
 		
 		GRect door = new GRect(50, 100);
-		add(door, 150+75, height-100);
+		add(door, 150+75, height-80);
 		
 		GLine roofLine = new GLine(150, height-200, 150+100, height-300);
 		add(roofLine);
@@ -23,7 +23,7 @@ public class Problem12 extends GraphicsProgram {
 		GRect windowSecond = new GRect(50, 50);
 		add(windowSecond, 275, height - 175);
 		
-		GOval doorKnob = new GOval(40, 40, 40, 40);
+		GOval doorKnob = new GOval(40, 40, 250, height-30);
 		add(doorKnob);
 		
 	}
