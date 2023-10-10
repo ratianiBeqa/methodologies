@@ -8,6 +8,8 @@ public class Problem12 extends GraphicsProgram {
 		
 		GRect myRect = new GRect(200, 200);
 		add(myRect, 150, height-200);
+		myRect.setFilled(true);
+		myRect.setFillColor(Color.brown);
 		
 		GRect door = new GRect(50, 100);
 		add(door, 150+75, height-80);
@@ -20,11 +22,13 @@ public class Problem12 extends GraphicsProgram {
 		
 		GRect windowFirst = new GRect(50, 50);
 		add(windowFirst, 175, height - 175);
+		windowFirst.setFilled(true);
+		windowFirst.setFillColor(Color.cyan);
 
 		GRect windowSecond = new GRect(50, 50);
 		add(windowSecond, 275, height - 175);
 		windowSecond.setFilled(true);
-		windowSecond.setFillColor(Color.green);
+		windowSecond.setFillColor(Color.cyan);
 		
 		GOval doorKnob = new GOval(240, height-30, 5, 5);
 		add(doorKnob);
