@@ -11,7 +11,7 @@ public class Problem12 extends GraphicsProgram {
 		GRect door = new GRect(50, 100);
 		add(door, 150+75, height-100);
 		
-		GLine roofLine = new GLine(150, height-200, 150+100, height-200);
+		GLine roofLine = new GLine(150, height-200, 150+100, height-225);
 		add(roofLine);
 		
 		GLine roofLine2 = new GLine(150+100, height-200, 200+150, height-200);
