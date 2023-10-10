@@ -9,5 +9,7 @@ public class Problem12 extends GraphicsProgram {
 		GRect door = new GRect(50, 100);
 		add(door, 150+75, 200+100);
 		
+		GLine roofLine = new GLine(150, 200);
+		add(roofLine, 75, 60);
 	}
 }
