@@ -6,6 +6,6 @@ public class Problem12 extends GraphicsProgram {
 		int width = getWidth();
 		int height = getHeight();
 		GRect myRect = new GRect(200, 200);
-		add(myRect, width/2 - 50, width/2 + 50);
+		add(myRect, width/2 - 100, width/2 + 100);
 	}
 }
