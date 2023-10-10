@@ -7,7 +7,7 @@ public class Problem12 extends GraphicsProgram {
 		add(myRect, 150, 200);
 		
 		GRect door = new GRect(50, 100);
-		add(door, 150+75, 200+100)
+		add(door, 150+75, 200+100);
 		
 	}
 }
