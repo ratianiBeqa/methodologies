@@ -11,10 +11,10 @@ public class Problem12 extends GraphicsProgram {
 		GRect door = new GRect(50, 100);
 		add(door, 150+75, height-100);
 		
-		GLine roofLine = new GLine(150, height-200, 150+100, height-280);
+		GLine roofLine = new GLine(150, height-200, 150+100, height-300);
 		add(roofLine);
 		
-		GLine roofLine2 = new GLine(150+200, height-200, 150+100, height-280);
+		GLine roofLine2 = new GLine(150+200, height-200, 150+100, height-300);
 		add(roofLine2);
 		
 		GRect windowFirst = new GRect(50, 50);
