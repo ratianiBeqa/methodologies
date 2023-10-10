@@ -1,5 +1,6 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
+import java.awt.Color;
 
 public class Problem12 extends GraphicsProgram {
 	public void run() {
@@ -22,6 +23,8 @@ public class Problem12 extends GraphicsProgram {
 
 		GRect windowSecond = new GRect(50, 50);
 		add(windowSecond, 275, height - 175);
+		windowSecond.setFilled(true);
+		windowSecond.setFillColor(Color.green);
 		
 		GOval doorKnob = new GOval(240, height-30, 5, 5);
 		add(doorKnob);
