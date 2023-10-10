@@ -15,8 +15,9 @@ public class Problem12 extends GraphicsProgram {
 		GLine roofLine2 = new GLine(150+100, 60, 200+150, 200);
 		add(roofLine2);
 		
-		GRect window = new GRect(50, 50);
-		add(window, 175, 225);
-		add(window, 275, 225);
+		GRect windowFirst = new GRect(50, 50);
+		add(windowFirst, 175, 225);
+		GRect windowSecond = new GRect(50, 50);
+		add(windowSecond, 275, 225);
 	}
 }
