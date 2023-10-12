@@ -4,6 +4,7 @@ import java.awt.Color;
 
 public class Problem12 extends GraphicsProgram {
 	public void run() {
+		while(true) {
 		int height = getHeight();
 		
 		GRect myRect = new GRect(200, 200);
@@ -35,6 +36,6 @@ public class Problem12 extends GraphicsProgram {
 		GOval doorKnob = new GOval(240, height-30, 5, 5);
 		add(doorKnob);
 		doorKnob.setFilled(true);
-		
+		}
 	}
 }
