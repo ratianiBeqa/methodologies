@@ -20,6 +20,9 @@ public class Problem14 extends GraphicsProgram {
 		add(eyeOne);
 		add(eyeTwo);
 		
+		GRect mouth = new GRect(70, 20);
+		add(mouth, w/2 - 35, h/2 + 30);
+		
 
 //		myRect.setFilled(true);
 //		myRect.setFillColor(new Color(150, 75, 0));
