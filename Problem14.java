@@ -22,6 +22,7 @@ public class Problem14 extends GraphicsProgram {
 		
 		GRect mouth = new GRect(70, 20);
 		add(mouth, w/2 - 35, h/2 + 20);
+		GLine tooth = new GLine(w/2 - 35 + 70 / 3, h/2 + 20, w/2 - 35 + 70 / 3, h/2 + 40);
 		
 
 //		myRect.setFilled(true);
