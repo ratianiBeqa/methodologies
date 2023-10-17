@@ -11,7 +11,7 @@ public class Problem25 extends ConsoleProgram {
 			min = a;
 		}
 		
-		for (int i=min; i>=1; i++) {
+		for (int i=min; i>=1; i--) {
 			if (b % i == 0 && a % i == 0) {
 				println("USG: " + i);
 				break;
