@@ -2,9 +2,20 @@ import acm.program.ConsoleProgram;
 
 public class Problem25 extends ConsoleProgram {
 	public void run() {
-		int n = readInt("Enter n: ");
-		for (int i=0; i<n; i++) {
-			println("Hello " + i);
+		int a = readInt("Enter n: ");
+		int b = readInt("Enter n: ");
+		int min;
+		if (a > b) {
+			min = b;
+		} else {
+			min = a;
+		}
+		
+		for (int i=min; i>=1; i++) {
+			if (b % i == 0 && a % i == 0) {
+				println("USG: " + i);
+				break;
+			}
 		}
 	}
 }
