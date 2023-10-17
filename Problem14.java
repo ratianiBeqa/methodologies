@@ -23,6 +23,7 @@ public class Problem14 extends GraphicsProgram {
 		add(eyeTwo);
 		
 		GRect mouth = new GRect(70, 20);
+		mouth.setColor(Color.white);
 		add(mouth, w/2 - 35, h/2 + 20);
 		GLine toothOne = new GLine(w/2 - 35 + 70/3, h/2 + 20, w/2 - 35 + 70/3, h/2 + 40);
 		GLine toothTwo = new GLine(w/2 - 35 + 140/3, h/2 + 20, w/2 - 35 + 140/3, h/2 + 40);
