@@ -15,7 +15,7 @@ public class Problem14 extends GraphicsProgram {
 		add(antanaOne);
 		add(antanaTwo);
 		
-		GLine eyeOne = new GLine(w)
+//		GLine eyeOne = new GLine(w)
 		
 		
 
