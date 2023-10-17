@@ -34,5 +34,8 @@ public class Problem14 extends GraphicsProgram {
 		GLine toothTwo = new GLine(w/2 - 35 + 140/3, h/2 + 20, w/2 - 35 + 140/3, h/2 + 40);
 		toothTwo.setColor(Color.LIGHT_GRAY);
 		add(toothTwo);
+		
+
+
 	}
 }
