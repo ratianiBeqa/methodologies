@@ -8,7 +8,7 @@ public class Problem14 extends GraphicsProgram {
 		int h = getHeight();
 		
 		GRect head = new GRect(100, 100);
-		add(head, w/2, h/2);
+		add(head, w/2 - 50, h/2 - 50);
 		
 		
 		
