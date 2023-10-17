@@ -3,8 +3,10 @@ import acm.program.ConsoleProgram;
 public class Problem20 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("Enter n: ");
+		double sum = 0;
 		for (int i=0; i<n; i++) {
-			println("Hello " + i);
+			double newNum = readDouble("Enter number " + i+1 + ": ");
+			sum = sum + newNum;
 		}
 	}
 }
