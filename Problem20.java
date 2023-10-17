@@ -8,5 +8,6 @@ public class Problem20 extends ConsoleProgram {
 			double newNum = readDouble("Enter number: ");
 			sum = sum + newNum;
 		}
+		println("sum is: " + sum);
 	}
 }
