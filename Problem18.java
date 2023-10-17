@@ -5,9 +5,9 @@ public class Problem18 extends ConsoleProgram {
 		int a = readInt("Enter num 1: ");
 		int b = readInt("Enter num 2: ");
 		if (a > b) {
-			println(a);
+			println("max is: " + a);
 		} else {
-			println(b);
+			println("max is: " + b);
 		}
 	}
 }
