@@ -5,16 +5,19 @@ public class Problem25 extends ConsoleProgram {
 		int a = readInt("Enter num 1: ");
 		int b = readInt("Enter num 2: ");
 		int min;
+		int max;
+
 		if (a > b) {
 			min = b;
+			max = a;
 		} else {
 			min = a;
+			max = b;
 		}
 		
-		for (int i=min; i>=1; i--) {
-			if (b % i == 0 && a % i == 0) {
-				println("USG: " + i);
-				break;
+		for (int i = max; i < a*b; i += min) {
+			if (i % a == 0 && i % b == 0) {
+				println("USJ: " + i);
 			}
 		}
 	}
