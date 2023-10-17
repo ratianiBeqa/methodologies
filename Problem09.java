@@ -4,24 +4,24 @@ public class Problem09 extends Karel {
 
 	public void run() {
 		move();
-		while(beepersPresent()) {		
+		while (beepersPresent()) {
 			multiplyBeepers();
 		}
 	}
-	
+
 	private void multiplyBeepers() {
 		pickBeeper();
 		move();
-		while(beepersPresent()) {
+		while (beepersPresent()) {
 			doubleBeepers();
 		}
 		returnBeeepers();
 	}
-	
+
 	private void returnBeeepers() {
 		move();
 		move();
-		while(beepersPresent()) {
+		while (beepersPresent()) {
 			turnAround();
 			pickBeeper();
 			move();
@@ -33,7 +33,7 @@ public class Problem09 extends Karel {
 		}
 		returnToPosition();
 	}
-	
+
 	private void returnToPosition() {
 		turnAround();
 		move();
@@ -41,7 +41,7 @@ public class Problem09 extends Karel {
 		move();
 		turnAround();
 	}
-	
+
 	private void doubleBeepers() {
 		pickBeeper();
 		move();
@@ -53,7 +53,7 @@ public class Problem09 extends Karel {
 		move();
 		turnAround();
 	}
-	
+
 	private void turnAround() {
 		turnLeft();
 		turnLeft();
