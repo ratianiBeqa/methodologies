@@ -2,8 +2,8 @@ import acm.program.ConsoleProgram;
 
 public class Problem25 extends ConsoleProgram {
 	public void run() {
-		int a = readInt("Enter n: ");
-		int b = readInt("Enter n: ");
+		int a = readInt("Enter num 1: ");
+		int b = readInt("Enter num 2: ");
 		int min;
 		if (a > b) {
 			min = b;
