@@ -1,3 +1,4 @@
+package bonusProblems;
 import stanford.karel.Karel;
 
 public class Seminar03 extends Karel {

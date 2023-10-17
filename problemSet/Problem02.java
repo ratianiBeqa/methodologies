@@ -1,3 +1,4 @@
+package problemSet;
 import stanford.karel.SuperKarel;
 
 public class Problem02 extends SuperKarel {

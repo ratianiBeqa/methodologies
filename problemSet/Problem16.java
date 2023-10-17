@@ -1,3 +1,4 @@
+package problemSet;
 import acm.program.ConsoleProgram;
 
 public class Problem16 extends ConsoleProgram {
