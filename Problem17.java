@@ -3,7 +3,9 @@ import acm.program.ConsoleProgram;
 public class Problem17 extends ConsoleProgram {
 	public void run() {
 		double num = readDouble("enter number: ");
-		println("int part: " + (int) num);		
-		println("fract part: " + (num - (int) num));
+		int intPart = (int) num;
+		double fractPart = num - intPart;
+		println("int part: " + intPart);
+		println("fract part: " + fractPart);
 	}
 }
