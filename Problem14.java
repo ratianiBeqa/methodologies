@@ -28,13 +28,13 @@ public class Problem14 extends GraphicsProgram {
 		add(mouth, w/2 - 35, h/2 + 20);
 		
 		GLine toothOne = new GLine(w/2 - 35 + 70/3, h/2 + 20, w/2 - 35 + 70/3, h/2 + 40);
-		mouth.setFilled(true);
-		mouth.setColor(Color.white);
+		toothOne.setFilled(true);
+		toothOne.setColor(Color.LIGHT_GRAY);
 		add(toothOne);
 		
 		GLine toothTwo = new GLine(w/2 - 35 + 140/3, h/2 + 20, w/2 - 35 + 140/3, h/2 + 40);
-		mouth.setFilled(true);
-		mouth.setColor(Color.white);
+		toothTwo.setFilled(true);
+		toothTwo.setColor(Color.LIGHT_GRAY);
 		add(toothTwo);
 		
 
