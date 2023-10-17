@@ -10,7 +10,8 @@ public class Problem14 extends GraphicsProgram {
 		GRect head = new GRect(100, 100);
 		add(head, w/2 - 50, h/2 - 50);
 		
-		GLine antana = new GLine(w/2 - 50, h/2 - 50, w/2 - 50, h/2 - 100);
+		GLine antanaOne = new GLine(w/2 - 50, h/2 - 50, w/2 - 50, h/2 - 100);
+		GLine antanaTwo = new GLine(w/2 + 50, h/2 - 50, w/2 + 50, h/2 - 100);
 		add(antana);
 		
 		
