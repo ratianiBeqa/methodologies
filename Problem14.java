@@ -15,6 +15,8 @@ public class Problem14 extends GraphicsProgram {
 		add(antanaOne);
 		add(antanaTwo);
 		
+		GLine eyeOne = new GLine(w)
+		
 		
 
 //		myRect.setFilled(true);
