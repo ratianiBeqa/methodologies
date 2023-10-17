@@ -16,7 +16,7 @@ public class Problem14 extends GraphicsProgram {
 		add(antanaTwo);
 		
 		GLine eyeOne = new GLine(w/2 - 30, h/2 - 30, w/2 - 10, h/2 - 10);
-		GLine eyeTwo = new GLine(w/2 + 30, h/2 - 10, w/2 + 10, h/2 - 30);
+		GLine eyeTwo = new GLine(w/2 + 10, h/2 - 10, w/2 + 10, h/2 - 30);
 		add(eyeOne);
 		add(eyeTwo);
 		
