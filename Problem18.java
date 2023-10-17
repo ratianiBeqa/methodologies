@@ -5,9 +5,11 @@ public class Problem18 extends ConsoleProgram {
 		int a = readInt("Enter num 1: ");
 		int b = readInt("Enter num 2: ");
 		if (a > b) {
-			println("max is: " + a);
+			println("Max is: " + a);
+		} else if (a < b){
+			println("Max is: " + b);
 		} else {
-			println("max is: " + b);
+			println("They are equal");
 		}
 	}
 }
