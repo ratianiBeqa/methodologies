@@ -18,6 +18,7 @@ public class Problem25 extends ConsoleProgram {
 		for (int i = max; i < a*b; i += min) {
 			if (i % a == 0 && i % b == 0) {
 				println("USJ: " + i);
+				break;
 			}
 		}
 	}
