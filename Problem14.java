@@ -21,7 +21,7 @@ public class Problem14 extends GraphicsProgram {
 		add(eyeTwo);
 		
 		GRect mouth = new GRect(70, 20);
-		add(mouth, w/2 - 35, h/2 + 30);
+		add(mouth, w/2 - 35, h/2 + 20);
 		
 
 //		myRect.setFilled(true);
