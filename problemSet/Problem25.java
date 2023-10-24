@@ -13,7 +13,7 @@ public class Problem25 extends ConsoleProgram {
 			max = b;
 		}
 		
-		for (int i = max; i < a*b; i++) { //uketesi solutionic sheidzleba vici
+		for (int i = max; i <= a*b; i++) { //uketesi solutionic sheidzleba vici
 			if (i % a == 0 && i % b == 0) {
 				println("USJ: " + i);
 				break;
