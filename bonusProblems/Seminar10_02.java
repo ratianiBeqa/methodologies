@@ -16,7 +16,7 @@ public class Seminar10_02 extends GraphicsProgram {
 		for (int i = 0; i < numCells; i++) {
 			for (int j = 0; j < numCells; j++) {
 				GRect tile = new GRect(cellLength, cellLength);
-				if ((i + j) % 2 == 1) { // I'm proud of this one
+				if ((i + j) % 2 == 1) {
 					tile.setFilled(true);
 					tile.setFillColor(Color.black);
 				}
